@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>가위바위보 게임</title>
+
+   <!-- css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css">
+   <link rel="stylesheet" href="fonts.css">
+   <link rel="stylesheet" href="main.css">
+
+   <!-- js -->
+   <script defer src="main.js"></script>
+</head>
+<body>
+   <section class="start_page">
+      <div class="start_img_wrap">
+         <img src="images/main_img.png" alt="가위바위보 이미지">
+      </div>
+      <strong class="game_title">가위 바위 보 <span>게임</span></strong>
+      <button class="start_btn">Game Start</button>
+   </section>
+   <section class="game_explain">
+      <strong>게임 규칙</strong>
+      <div class="explain_wrap">
+         <ul>
+            <li>1. 3점을 달성하면 게임은 종료됩니다.</li>
+            <li>2. 3초안에 가위, 바위, 보 중 한가지를 고르세요.</li>
+            <li>3. 시간 내에 선택하지 못 할 경우 점수를 잃게 됩니다.</li>
+         </ul>
+      </div>
+      <div class="explain_btn_wrap">
+         <button class="explain_btn exit_btn">나가기</button>
+         <button class="explain_btn continue_btn">계속하기</button>
+      </div>
+
+   </section>
+   <section class="game_page">
+      <div class="main_game">
+         <div class="choice_wrap">
+            <p>셋 중 하나를 선택하세요.</p>
+            <div class="choice_img_wrap">
+               <a class="choice_img" id="scissors">
+                  <img src="images/Triangle.png" alt="삼각형 이미지">
+               </a>
+               <a class="choice_img" id="rock">
+                  <img src="images/box.png" alt="사각형 이미지">
+               </a>
+               <a class="choice_img" id="paper">
+                  <img src="images/circle.png" alt="원형 이미지">
+               </a>
+            </div>
+         </div>
+         <strong>
+            안 내면 진다
+            <span style="color: var(--point-color-1)">가위 </span>
+            <span>바위 </span>
+            <span style="color: var(--point-color-2)">보</span>
+         </strong>
+         <span class="game_timer">3</span>
+      </div>
+      <div class="result_popup">
+         <div class="result_wrap">
+            <strong class="result_text"></strong>
+            <strong class="result_score"></strong>
+            <button class="skip_btn">skip</button>
+         </div>
+      </div>
+   </section>
+   <section class="end_page">
+      <div class="end_img_wrap">
+         <img src="images/main_img.png" alt="가위바위보 이미지">
+      </div>
+      <strong class="end_title"></strong>
+      <div class="end_btn_wrap">
+         <button class="firstPage_btn">처음 화면으로</button>
+      </div>
+   </section>
+</body>
+</html>

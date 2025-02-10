@@ -1,0 +1,8 @@
+/* fonts.css */
+@charset "utf-8";
+
+@font-face {
+   font-family: 'Ria';
+   src: url(../fonts/RiaSans-ExtraBold.ttf);
+   font-weight: 700;
+}
